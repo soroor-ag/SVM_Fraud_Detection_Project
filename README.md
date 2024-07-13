@@ -52,11 +52,4 @@ This project aims to explore the application of Support Vector Machine (SVM) on 
   - seaborn
   - imageio
 
-### Installation
 
-Clone the repository and install the required dependencies:
-
-```bash
-git clone https://github.com/yourusername/svm-fraud-detection.git
-cd svm-fraud-detection
-pip install -r requirements.txt
