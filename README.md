@@ -1,79 +1,62 @@
-Overview
+# SVM and Fraud Detection Project
+
+## Overview
+
 This project aims to explore the application of Support Vector Machine (SVM) on the famous Iris dataset and to implement and analyze a custom SVM from scratch. Additionally, the project involves studying a research paper on fraud detection, implementing the proposed model, and comparing its performance with and without noise removal and oversampling techniques.
 
-Project Structure
-Iris Dataset Analysis
+## Project Structure
 
-Load and explore the Iris dataset.
-Calculate statistics (dimensions, sample count, mean, variance, correlations).
-Visualize the dataset using t-SNE.
-Analyze the potential for dimensionality reduction based on the obtained data.
-SVM with Linear Kernel
+1. **Iris Dataset Analysis**
+    - Load and explore the Iris dataset.
+    - Calculate statistics (dimensions, sample count, mean, variance, correlations).
+    - Visualize the dataset using t-SNE.
+    - Analyze the potential for dimensionality reduction based on the obtained data.
 
-Classify the data using SVM with a linear kernel.
-Obtain the confusion matrix.
-Plot decision boundaries in a 2D space (after dimensionality reduction).
-SVM with Polynomial Kernels
+2. **SVM with Linear Kernel**
+    - Classify the data using SVM with a linear kernel.
+    - Obtain the confusion matrix.
+    - Plot decision boundaries in a 2D space (after dimensionality reduction).
 
-Implement SVM with polynomial kernels (degrees 1 to 10) using scikit-learn.
-Report and compare the results using appropriate metrics.
-Create a GIF visualizing the decision boundaries for each polynomial degree.
-Custom SVM Implementation
+3. **SVM with Polynomial Kernels**
+    - Implement SVM with polynomial kernels (degrees 1 to 10) using `scikit-learn`.
+    - Report and compare the results using appropriate metrics.
+    - Create a GIF visualizing the decision boundaries for each polynomial degree.
 
-Implement SVM from scratch without using scikit-learn.
-Define a SVM class with methods kernel_Polynomial, Fit, and Predict.
-Report the accuracy of the custom SVM as the polynomial degree increases.
-Compare the results with the scikit-learn implementation.
-Create a GIF visualizing the decision boundaries for each polynomial degree.
-Fraud Detection Paper Review
+4. **Custom SVM Implementation**
+    - Implement SVM from scratch without using `scikit-learn`.
+    - Define a `SVM` class with methods `kernel_Polynomial`, `Fit`, and `Predict`.
+    - Report the accuracy of the custom SVM as the polynomial degree increases.
+    - Compare the results with the `scikit-learn` implementation.
+    - Create a GIF visualizing the decision boundaries for each polynomial degree.
 
-Identify major challenges in developing fraud detection models and the methods used in the paper to address these challenges.
-Summarize the network architecture proposed in the paper.
-Implement and train the model using the provided dataset.
-Avoid overfitting by returning the best model weights based on validation error at the end of training.
-Plot the confusion matrix on the test data and report Accuracy, Precision, Recall, and F1-score.
-Discuss the limitations of using Accuracy alone for imbalanced datasets and suggest complementary metrics.
-Evaluate model performance with varying thresholds for oversampling and plot Accuracy & Recall similar to figure 7 in the paper.
-Train the model with unbalanced data and noise included, then report and compare the results with the previous model.
-Getting Started
-Prerequisites
-Python 3.x
-Required libraries:
-numpy
-pandas
-scikit-learn
-matplotlib
-seaborn
-imageio
-Installation
+5. **Fraud Detection Paper Review**
+    - Identify major challenges in developing fraud detection models and the methods used in the paper to address these challenges.
+    - Summarize the network architecture proposed in the paper.
+    - Implement and train the model using the provided dataset.
+    - Avoid overfitting by returning the best model weights based on validation error at the end of training.
+    - Plot the confusion matrix on the test data and report Accuracy, Precision, Recall, and F1-score.
+    - Discuss the limitations of using Accuracy alone for imbalanced datasets and suggest complementary metrics.
+    - Evaluate model performance with varying thresholds for oversampling and plot Accuracy & Recall similar to figure 7 in the paper.
+    - Train the model with unbalanced data and noise included, then report and compare the results with the previous model.
+
+## Getting Started
+
+### Prerequisites
+
+- Python 3.x
+- Required libraries:
+  - numpy
+  - pandas
+  - scikit-learn
+  - matplotlib
+  - seaborn
+  - imageio
+
+### Installation
+
 Clone the repository and install the required dependencies:
 
-bash
-Copy code
+```bash
 git clone https://github.com/yourusername/svm-fraud-detection.git
 cd svm-fraud-detection
 pip install -r requirements.txt
-Usage
-Iris Dataset Analysis and SVM Implementation
-
-Run the notebook iris_svm_analysis.ipynb to perform dataset analysis, SVM classification with different kernels, and visualize the results.
-Custom SVM Implementation
-
-Execute the notebook custom_svm.ipynb to see the implementation of the custom SVM, its performance, and visualizations.
-Fraud Detection Model Implementation
-
-Open and run fraud_detection.ipynb to review the fraud detection paper, implement the proposed model, and analyze its performance under different conditions.
-Results
-Iris Dataset Analysis
-Visualizations and statistical analysis indicating the feasibility of dimensionality reduction.
-Confusion matrices and decision boundary plots for SVM with linear and polynomial kernels.
-Custom SVM Implementation
-Accuracy comparison between custom and scikit-learn SVM implementations.
-GIF animations showing decision boundaries for polynomial kernels of different degrees.
-Fraud Detection Model
-Detailed report on the challenges and solutions in fraud detection as per the research paper.
-Model performance metrics including Accuracy, Precision, Recall, and F1-score.
-Comparison of model performance with and without noise removal and oversampling.
-Plots illustrating the impact of different oversampling thresholds on model performance.
-Contributing
-Contributions are welcome! Please open an issue or submit a pull request for any enhancements or bug fixes.
